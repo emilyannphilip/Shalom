@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,600;0,8..60,700;1,8..60,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container-low":"#e9f7f3","on-secondary-fixed":"#00210e","on-secondary":"#ffffff","on-error":"#ffffff","secondary":"#376847","tertiary":"#2a1e00","surface":"#effcf9","on-primary-container":"#86a496","surface-dim":"#cfddd9","surface-container-highest":"#d8e5e2","primary-fixed-dim":"#aecebe","inverse-surface":"#273331","error-container":"#ffdad6","error":"#ba1a1a","on-background":"#121e1c","on-primary-fixed":"#032017","surface-bright":"#effcf9","on-surface":"#121e1c","secondary-fixed":"#b9efc5","on-tertiary-fixed":"#251a00","background":"#effcf9","on-primary":"#ffffff","inverse-primary":"#aecebe","on-secondary-container":"#3b6d4b","tertiary-container":"#443200","surface-container-lowest":"#ffffff","primary-fixed":"#caeada","on-primary-fixed-variant":"#304c41","on-error-container":"#93000a","on-tertiary-fixed-variant":"#5a4300","tertiary-fixed-dim":"#eec14b","primary":"#07241a","tertiary-fixed":"#ffdf98","on-tertiary":"#ffffff","secondary-container":"#b6edc2","inverse-on-surface":"#e6f4f0","on-surface-variant":"#424844","secondary-fixed-dim":"#9dd3aa","surface-container":"#e3f1ed","primary-container":"#1e3a2f","outline":"#727974","on-tertiary-container":"#c19823","outline-variant":"#c1c8c3","surface-tint":"#486458","surface-variant":"#d8e5e2","on-secondary-fixed-variant":"#1e5031","surface-container-high":"#ddebe8"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-md":"1.25rem","space-xs":"0.375rem","gutter":"1.5rem","margin-mobile":"1.25rem","space-lg":"2rem","gutter-mobile":"1rem","space-xl":"3rem","margin":"3rem","space-sm":"0.75rem"},"fontFamily":{"label-md":["Plus Jakarta Sans"],"headline-sm":["\"Source Serif 4\""],"headline-xl":["\"Source Serif 4\""],"headline-lg":["\"Source Serif 4\""],"body-sm":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["\"Source Serif 4\""],"body-md":["Plus Jakarta Sans"],"headline-xl-mobile":["\"Source Serif 4\""],"body-lg":["Plus Jakarta Sans"],"headline-md":["\"Source Serif 4\""],"label-sm":["Plus Jakarta Sans"]},"fontSize":{"label-md":["14px",{"lineHeight":"20px","fontWeight":"600"}],"headline-sm":["22px",{"lineHeight":"30px","fontWeight":"600"}],"headline-xl":["48px",{"lineHeight":"56px","fontWeight":"600"}],"headline-lg":["36px",{"lineHeight":"44px","fontWeight":"600"}],"body-sm":["15px",{"lineHeight":"22px","fontWeight":"400"}],"label-lg":["16px",{"lineHeight":"22px","fontWeight":"600"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","fontWeight":"600"}],"body-md":["17px",{"lineHeight":"26px","fontWeight":"400"}],"headline-xl-mobile":["34px",{"lineHeight":"42px","fontWeight":"600"}],"body-lg":["19px",{"lineHeight":"30px","fontWeight":"400"}],"headline-md":["26px",{"lineHeight":"34px","fontWeight":"600"}],"label-sm":["12px",{"lineHeight":"16px","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between py-6 px-4 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col gap-6"><div class="flex items-center gap-3 px-3"><div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-primary-fixed"><span class="material-symbols-outlined text-xl">nature_people</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-tight">Beth Shalom</span><span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase">Living Sanctuary</span></div></div><div class="h-px bg-surface-container mx-2"></div><nav class="flex flex-col gap-1.5" data-active-classes="bg-primary-container text-on-primary font-label-md rounded-xl"><a aria-current="page" class="flex items-center gap-3 px-4 py-3 transition-all bg-primary-container text-on-primary font-label-md rounded-xl" data-path="inquiry-leads" href="/admin/inquiry-leads/"><span class="material-symbols-outlined text-xl">contact_mail</span><span class="font-label-md text-label-md">Inquiry Leads</span></a><a class="flex items-center gap-3 px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="lead-details" href="/admin/lead-details/"><span class="material-symbols-outlined text-xl">person_search</span><span class="font-label-md text-label-md">Lead Details</span></a><a class="flex items-center gap-3 px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="room-availability-cms" href="/admin/room-availability/"><span class="material-symbols-outlined text-xl">meeting_room</span><span class="font-label-md text-label-md">Room Availability CMS</span></a><a class="flex items-center gap-3 px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="media-and-notice-cms" href="/admin/media-notices/"><span class="material-symbols-outlined text-xl">campaign</span><span class="font-label-md text-label-md">Media &amp; Notice CMS</span></a><a class="flex items-center gap-3 px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="audit-and-reports" href="/admin/inquiry-leads/"><span class="material-symbols-outlined text-xl">analytics</span><span class="font-label-md text-label-md">Audit &amp; Reports</span></a></nav></div><div class="flex flex-col gap-4 px-2"><div class="p-3 rounded-xl bg-surface-container flex flex-col gap-1"><span class="font-label-sm text-label-sm text-secondary font-semibold flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary"></span> Sanctuary Network</span><span class="font-body-sm text-body-sm text-on-surface-variant">Staff Care Access Level 1</span></div><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="public-home" href="/"><span class="material-symbols-outlined text-lg">arrow_back</span><span class="font-label-md text-label-md">Back to Public Website</span></a></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-gutter flex items-center justify-between"><div class="flex items-center gap-4"><div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary-container text-on-secondary-container"><span class="material-symbols-outlined text-sm">admin_panel_settings</span><span class="font-label-sm text-label-sm uppercase tracking-wide">Staff Admin Portal</span></div><div class="hidden md:flex items-center gap-2 text-on-surface-variant font-label-md text-label-md pl-2"><span class="material-symbols-outlined text-base">calendar_today</span><span>Thursday, Oct 24 • 09:42 AM</span></div></div><div class="flex items-center gap-4"><button aria-label="Notifications" class="relative p-2.5 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"><span class="material-symbols-outlined text-2xl">notifications</span><span class="absolute top-2 right-2 w-2.5 h-2.5 rounded-full bg-error ring-2 ring-surface"></span></button><div class="h-8 w-px bg-surface-container-high"></div><div class="flex items-center gap-3 pl-1"><div class="text-right hidden sm:flex sm:flex-col"><span class="font-label-md text-label-md text-on-surface leading-tight">Sister Grace Vance</span><span class="font-label-sm text-label-sm text-on-surface-variant">Lead Administrator</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida/ALJJyrAZq8WH3QMEEVHEUxW3p5l2h3IMpwhF4Usr938ZT8x455ePGv2v8XMdMyAwej-CPK_ugsZIP7THOsOCCKNlN0ypjByLIHmruVHWGw23N99iOQfG7zeDh_PiVjSbCokfK4zzQdFdZc-2KRP9Rf4mpggHdUwtLW5npzbZntmfWXtZlMm8BvODZffcppmURrG2qsdB0gfzmSA--mtXmu-1YJ4MloFAfDdv8lZd28bgUR66RqxVoaqElIBbWw"/></div></div></header><main class="w-full pt-20 px-gutter py-space-lg bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Breadcrumb & Heading Block -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<span>Staff Portal</span>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<span class="text-secondary font-semibold">Inquiries &amp; Admissions Desk</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Admissions &amp; Inquiry Management Desk</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+        Central coordination console for triage, clinical review, and accompanied sanctuary visits for elders and supportive living dependents.
+      </p>
+</div>
+<!-- Quick Export & Manual Ingestion Actions -->
+<div class="flex items-center gap-3 self-start md:self-end">
+<button class="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-all duration-200 shadow-sm active:scale-95 font-label-md text-label-md">
+<span class="material-symbols-outlined text-xl text-secondary">download</span>
+<span>Export CSV / Report</span>
+</button>
+<button class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-primary-container text-on-primary hover:opacity-95 transition-all duration-200 shadow-md active:scale-95 font-label-md text-label-md">
+<span class="material-symbols-outlined text-xl">person_add</span>
+<span>+ Log Manual Inquiry</span>
+</button>
+</div>
+</div>
+<!-- Key Metrics / KPI Summary Deck -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-8">
+<!-- Card 1 -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Total Inquiries</span>
+<span class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-base">forum</span>
+</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-primary">42</span>
+<span class="inline-flex items-center font-label-sm text-label-sm text-secondary font-semibold">
+<span class="material-symbols-outlined text-sm">trending_up</span> +14%
+        </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">This month vs previous 30d</span>
+<div class="absolute bottom-0 left-0 right-0 h-1 bg-secondary"></div>
+</div>
+<!-- Card 2 -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Pending Review</span>
+<span class="w-8 h-8 rounded-full bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-base">priority_high</span>
+</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-error">07</span>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">Under 24h</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Flagged urgent clinical intake</span>
+<div class="absolute bottom-0 left-0 right-0 h-1 bg-error"></div>
+</div>
+<!-- Card 3 -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Medical Assessments</span>
+<span class="w-8 h-8 rounded-full bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-base">clinical_notes</span>
+</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-primary">11</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Candidates</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Doctor &amp; RN panel queued</span>
+<div class="absolute bottom-0 left-0 right-0 h-1 bg-primary-fixed-dim"></div>
+</div>
+<!-- Card 4 -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Campus Visits</span>
+<span class="w-8 h-8 rounded-full bg-surface-container-high text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-base">calendar_month</span>
+</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-primary">09</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">This Week</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Accompanied family tours</span>
+<div class="absolute bottom-0 left-0 right-0 h-1 bg-secondary-fixed-dim"></div>
+</div>
+<!-- Card 5 (Living Capacity) -->
+<div class="p-5 rounded-2xl bg-primary-container text-on-primary shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed">Sanctioned Living</span>
+<span class="material-symbols-outlined text-primary-fixed">cottage</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-lg text-headline-lg text-surface-container-lowest">28</span>
+<span class="font-headline-sm text-headline-sm text-primary-fixed">/ 32</span>
+<span class="ml-2 font-label-sm text-label-sm text-primary-fixed">Units Active</span>
+</div>
+<div class="w-full bg-primary/40 rounded-full h-2 my-2 overflow-hidden">
+<div class="bg-secondary-fixed h-2 rounded-full" style="width: 87.5%"></div>
+</div>
+<span class="font-body-sm text-body-sm text-primary-fixed-dim">4 Vacant: Harmony &amp; Vista Wings</span>
+</div>
+</div>
+</div>
+<!-- Search & Dynamic Filter Bar -->
+<div class="p-4 rounded-2xl bg-surface-container-lowest shadow-sm mb-6 flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4">
+<div class="flex-1 relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline text-xl">search</span>
+<input class="w-full pl-12 pr-4 py-3 rounded-xl bg-surface-container font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant/70 focus:outline-none focus:bg-surface-container-low transition-colors" placeholder="Search resident name, guardian, phone (+91 / UAE), or Inquiry ID..." type="text"/>
+</div>
+<div class="flex flex-wrap items-center gap-2.5">
+<!-- Status Filter -->
+<div class="relative">
+<select class="appearance-none pl-3.5 pr-8 py-2.5 rounded-xl bg-surface-container font-label-md text-label-md text-on-surface cursor-pointer hover:bg-surface-container-high transition-colors focus:outline-none">
+<option>All Statuses (42)</option>
+<option>New / Unreviewed (7)</option>
+<option>Medical Triage (11)</option>
+<option>Walkthrough Booked (9)</option>
+<option>Committee Review (8)</option>
+<option>Admitted</option>
+<option>Archived</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none text-lg">arrow_drop_down</span>
+</div>
+<!-- Accommodation Type -->
+<div class="relative">
+<select class="appearance-none pl-3.5 pr-8 py-2.5 rounded-xl bg-surface-container font-label-md text-label-md text-on-surface cursor-pointer hover:bg-surface-container-high transition-colors focus:outline-none">
+<option>All Living Spaces</option>
+<option>Harmony (Assisted Care Suite)</option>
+<option>Vista (Independent Senior Room)</option>
+<option>Nest (Single Studio)</option>
+<option>Heaven (Memory Care)</option>
+<option>Aura (Duo Living)</option>
+<option>Supportive Care Dormitory</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none text-lg">arrow_drop_down</span>
+</div>
+<!-- Location Demographics Filter -->
+<div class="relative">
+<select class="appearance-none pl-3.5 pr-8 py-2.5 rounded-xl bg-surface-container font-label-md text-label-md text-on-surface cursor-pointer hover:bg-surface-container-high transition-colors focus:outline-none">
+<option>All Geographies</option>
+<option>Kerala Domestic</option>
+<option>UAE / GCC NRI</option>
+<option>US / UK / International</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none text-lg">arrow_drop_down</span>
+</div>
+<button class="p-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" title="Reset Filters">
+<span class="material-symbols-outlined text-xl">restart_alt</span>
+</button>
+</div>
+</div>
+<!-- Main Content Mosaic: Table & Activity Sidebar -->
+<div class="grid grid-cols-1 xl:grid-cols-4 gap-6 items-start">
+<!-- Left 3-Columns: Inquiries Table -->
+<div class="xl:col-span-3 flex flex-col bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden">
+<!-- Table Top Meta -->
+<div class="px-6 py-4 bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="font-headline-sm text-headline-sm text-primary">Active Inquiry Triage</span>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm">Showing 7 of 42</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+<span>Live Sync Active</span>
+</div>
+</div>
+<!-- Table Body -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-high/60 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3.5 px-4 font-semibold">Inquiry &amp; Date</th>
+<th class="py-3.5 px-4 font-semibold">Inquirer / Guardian</th>
+<th class="py-3.5 px-4 font-semibold">Resident Profile &amp; Care</th>
+<th class="py-3.5 px-4 font-semibold">Preferred Suite</th>
+<th class="py-3.5 px-4 font-semibold">Timeline</th>
+<th class="py-3.5 px-4 font-semibold">Status</th>
+<th class="py-3.5 px-4 font-semibold text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface">
+<!-- Lead 1: Urgent Dual Care (Elderly Mother + Adult Autistic Child) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-bold">#BS-2025-089</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Today • 09:40 AM</span>
+<span class="mt-1 inline-flex items-center gap-1 font-label-sm text-label-sm text-error font-semibold">
+<span class="material-symbols-outlined text-xs">timer</span> Needs Action
+                  </span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Mathew Philip</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Son</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">+971 50 492 8812</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate max-w-[170px]">m.philip@emirates.net</span>
+<span class="mt-1 inline-block px-2 py-0.5 rounded-full bg-tertiary-fixed text-tertiary font-label-sm text-label-sm w-fit font-medium">Dubai, UAE (NRI)</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col gap-1 max-w-[210px]">
+<span class="font-label-md text-label-md text-primary font-semibold">Mariamma (78) &amp; Joji (46)</span>
+<div class="flex flex-wrap gap-1 mt-0.5">
+<span class="px-2 py-0.5 rounded-md bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">Dual Dependent Care</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">Adult Autism Support</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">Hypertension / Diet</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Harmony Suite</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ground Floor, Wing B</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium mt-1">Wheelchair Ramp Access</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span> Immediate (&lt;30d)
+                </span>
+</td>
+<td class="py-4 px-4 align-top">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> New Inquiry
+                </span>
+</td>
+<td class="py-4 px-4 align-top text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary transition-colors" title="Call Inquirer">
+<span class="material-symbols-outlined text-lg">call</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-secondary transition-colors" title="WhatsApp Message">
+<span class="material-symbols-outlined text-lg">chat</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-sm text-label-sm transition-colors">
+                    Review
+                  </button>
+</div>
+</td>
+</tr>
+<!-- Lead 2: P-08 Walkthrough Booked -->
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-bold">#BS-2025-088</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Yesterday • 04:15 PM</span>
+<span class="mt-1 inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary">
+<span class="material-symbols-outlined text-xs">verified</span> Tour Confirmed
+                  </span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Dr. Reena Kurian</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Daughter</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">+91 94471 20984</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate max-w-[170px]">dr.reena@aims.amrita.edu</span>
+<span class="mt-1 inline-block px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm w-fit">Kottayam Local</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col gap-1 max-w-[210px]">
+<span class="font-label-md text-label-md text-primary font-semibold">Prof. P. C. Kurian (84)</span>
+<div class="flex flex-wrap gap-1 mt-0.5">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">Independent Retired Scholar</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">Library Access Req.</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Vista Suite (Level 2)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Balcony Garden View</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+                  Next 1-3 Months
+                </span>
+</td>
+<td class="py-4 px-4 align-top">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-sm text-secondary">explore</span> Walkthrough Booked
+                </span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant mt-1">Fri, 10:30 AM (Sister Grace)</span>
+</td>
+<td class="py-4 px-4 align-top text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary transition-colors" title="Call Inquirer">
+<span class="material-symbols-outlined text-lg">call</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-secondary transition-colors" title="Send Reminder">
+<span class="material-symbols-outlined text-lg">notifications</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest font-label-sm text-label-sm transition-colors">
+                    Pass
+                  </button>
+</div>
+</td>
+</tr>
+<!-- Lead 3: Medical Clinical Assessment Stage -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-bold">#BS-2025-084</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">22 Oct • 11:20 AM</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-semibold">George Varghese</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Brother</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">+1 (281) 674-9021</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate max-w-[170px]">gvarghese.tx@gmail.com</span>
+<span class="mt-1 inline-block px-2 py-0.5 rounded-full bg-tertiary-fixed text-tertiary font-label-sm text-label-sm w-fit font-medium">Houston, USA (NRI)</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col gap-1 max-w-[210px]">
+<span class="font-label-md text-label-md text-primary font-semibold">Susan Varghese (52)</span>
+<div class="flex flex-wrap gap-1 mt-0.5">
+<span class="px-2 py-0.5 rounded-md bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">Special Needs Assisted</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">Speech &amp; Physio Care</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Supportive Dormitory</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">East Care Pavilion</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">24/7 Female Attendant</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+                  Immediate (&lt;30d)
+                </span>
+</td>
+<td class="py-4 px-4 align-top">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container text-on-primary font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-sm text-primary-fixed">stethoscope</span> Medical Review
+                </span>
+<span class="block font-label-sm text-label-sm text-secondary font-medium mt-1">Dr. Jacob report pending</span>
+</td>
+<td class="py-4 px-4 align-top text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary transition-colors" title="Clinical Form">
+<span class="material-symbols-outlined text-lg">assignment_ind</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg bg-primary-container text-on-primary hover:opacity-90 font-label-sm text-label-sm transition-colors">
+                    Examine
+                  </button>
+</div>
+</td>
+</tr>
+<!-- Lead 4: Committee Review Stage -->
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-bold">#BS-2025-081</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">21 Oct • 03:00 PM</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Annamma Chacko</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Self</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">+91 98470 54110</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate max-w-[170px]">annammac1948@gmail.com</span>
+<span class="mt-1 inline-block px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm w-fit">Pampady / Kottayam</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col gap-1 max-w-[210px]">
+<span class="font-label-md text-label-md text-primary font-semibold">Annamma Chacko (76)</span>
+<div class="flex flex-wrap gap-1 mt-0.5">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">Independent Senior</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">Active Chapel Attendee</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Nest Studio (Level 3)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Elevator Facing Unit</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+                  Future (3-6m)
+                </span>
+</td>
+<td class="py-4 px-4 align-top">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md font-semibold">
+<span class="w-2 h-2 rounded-full bg-outline"></span> Committee Review
+                </span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant mt-1">Trustee board meet Thu</span>
+</td>
+<td class="py-4 px-4 align-top text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary transition-colors">
+<span class="material-symbols-outlined text-lg">more_horiz</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest font-label-sm text-label-sm transition-colors">
+                    View
+                  </button>
+</div>
+</td>
+</tr>
+<!-- Lead 5: Memory Care / Geriatric Bedside Nursing -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-bold">#BS-2025-079</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">20 Oct • 08:50 AM</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Biju Koshy</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Son</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">+965 9923 1084</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate max-w-[170px]">biju_kuwait@petrochem.kw</span>
+<span class="mt-1 inline-block px-2 py-0.5 rounded-full bg-tertiary-fixed text-tertiary font-label-sm text-label-sm w-fit font-medium">Kuwait City (NRI)</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col gap-1 max-w-[210px]">
+<span class="font-label-md text-label-md text-primary font-semibold">K. M. Koshy (88)</span>
+<div class="flex flex-wrap gap-1 mt-0.5">
+<span class="px-2 py-0.5 rounded-md bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">Dementia Support</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">Bedside Nursing Req.</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Heaven Wing (Secure)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Memory Garden Unit 104</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+                  Immediate (&lt;30d)
+                </span>
+</td>
+<td class="py-4 px-4 align-top">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Walkthrough Done
+                </span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant mt-1">Awaiting Deposit Paperwork</span>
+</td>
+<td class="py-4 px-4 align-top text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary transition-colors" title="Call Inquirer">
+<span class="material-symbols-outlined text-lg">call</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg bg-secondary text-on-secondary hover:bg-secondary/90 font-label-sm text-label-sm transition-colors">
+                    Admit
+                  </button>
+</div>
+</td>
+</tr>
+<!-- Lead 6: Follow-up Due -->
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-bold">#BS-2025-076</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">19 Oct • 02:10 PM</span>
+<span class="mt-1 inline-flex items-center gap-1 font-label-sm text-label-sm text-tertiary-container font-semibold">
+<span class="material-symbols-outlined text-xs">phone_callback</span> Follow-up Overdue
+                  </span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Dr. Laila Abraham</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Niece</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">+44 7911 123456</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate max-w-[170px]">laila.abraham@nhs.scot</span>
+<span class="mt-1 inline-block px-2 py-0.5 rounded-full bg-tertiary-fixed text-tertiary font-label-sm text-label-sm w-fit font-medium">Edinburgh, UK</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col gap-1 max-w-[210px]">
+<span class="font-label-md text-label-md text-primary font-semibold">Marykutty Joseph (81)</span>
+<div class="flex flex-wrap gap-1 mt-0.5">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">Post-ortho Rehab</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">Walker Assisted</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Aura Suite (Level 1)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Step-free Courtyard Unit</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+                  Next 1-3 Months
+                </span>
+</td>
+<td class="py-4 px-4 align-top">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed text-tertiary font-label-md text-label-md font-semibold">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span> Follow-up Due
+                </span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant mt-1">Called twice • Left note</span>
+</td>
+<td class="py-4 px-4 align-top text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary transition-colors" title="Call">
+<span class="material-symbols-outlined text-lg">call</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest font-label-sm text-label-sm transition-colors">
+                    Re-dial
+                  </button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination Bar -->
+<div class="p-4 bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-3 text-on-surface-variant">
+<span class="font-body-sm text-body-sm">
+          Showing <span class="font-semibold text-primary">1 - 6</span> of <span class="font-semibold text-primary">42</span> active leads
+        </span>
+<div class="flex items-center gap-1.5">
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface disabled:opacity-40 transition-colors" disabled="">
+<span class="material-symbols-outlined text-lg">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-semibold">1</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm">2</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm">3</button>
+<span class="px-1 text-on-surface-variant font-label-sm text-label-sm">...</span>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm">7</button>
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors">
+<span class="material-symbols-outlined text-lg">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Right 1-Column: Real-Time Operational Activity & Quick Sanctuary Triage Deck -->
+<div class="flex flex-col gap-6">
+<!-- Today's Campus Tours Schedule -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">transfer_within_a_station</span>
+<span class="font-headline-sm text-headline-sm text-primary">Tours Today</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">2 Scheduled</span>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Tour Item 1 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-semibold">10:30 AM • Dr. Reena Kurian</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest font-label-sm text-label-sm text-on-surface">Prof. Kurian (Father)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Focus: Vista library suites, accessible prayer room, dietary kitchen.</p>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-secondary font-medium">Guide: Sister Grace</span>
+<button class="font-label-sm text-label-sm text-primary underline hover:text-secondary">Mark Arrival</button>
+</div>
+</div>
+<!-- Tour Item 2 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-semibold">03:45 PM • Thomas Mathew</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest font-label-sm text-label-sm text-on-surface">Mother (82)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Focus: Ground floor Harmony nursing wing &amp; sensory herb garden.</p>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-secondary font-medium">Guide: Bro. Joseph</span>
+<button class="font-label-sm text-label-sm text-primary underline hover:text-secondary">Pre-Visit Call</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Real-Time Activity Log Feed -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">history</span>
+<span class="font-headline-sm text-headline-sm text-primary">Recent Activity</span>
+</div>
+<button class="font-label-sm text-label-sm text-secondary hover:underline font-semibold">View Audit</button>
+</div>
+<div class="flex flex-col gap-4 relative">
+<!-- Activity Line marker -->
+<div class="absolute left-3.5 top-3 bottom-3 w-0.5 bg-surface-container-highest"></div>
+<!-- Activity 1 -->
+<div class="flex items-start gap-3 relative z-10">
+<div class="w-7 h-7 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-sm">clinical_notes</span>
+</div>
+<div class="flex flex-col">
+<p class="font-body-sm text-body-sm text-on-surface leading-snug">
+<span class="font-semibold text-primary">Sister Annamma</span> updated clinical intake assessment for 
+                <span class="font-semibold text-secondary">#BS-2025-084</span> (Susan Varghese).
+              </p>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">8 minutes ago</span>
+</div>
+</div>
+<!-- Activity 2 -->
+<div class="flex items-start gap-3 relative z-10">
+<div class="w-7 h-7 rounded-full bg-surface-container-high text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-sm">event_available</span>
+</div>
+<div class="flex flex-col">
+<p class="font-body-sm text-body-sm text-on-surface leading-snug">
+                Accompanied campus visit confirmed for <span class="font-semibold text-primary">Dr. Reena Kurian</span> for Friday 10:30 AM.
+              </p>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">34 minutes ago</span>
+</div>
+</div>
+<!-- Activity 3 -->
+<div class="flex items-start gap-3 relative z-10">
+<div class="w-7 h-7 rounded-full bg-tertiary-fixed text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-sm">add_task</span>
+</div>
+<div class="flex flex-col">
+<p class="font-body-sm text-body-sm text-on-surface leading-snug">
+                New online inquiry submission <span class="font-semibold text-primary">#BS-2025-089</span> received from Mathew Philip (Dubai).
+              </p>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">52 minutes ago</span>
+</div>
+</div>
+<!-- Activity 4 -->
+<div class="flex items-start gap-3 relative z-10">
+<div class="w-7 h-7 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-sm">check_circle</span>
+</div>
+<div class="flex flex-col">
+<p class="font-body-sm text-body-sm text-on-surface leading-snug">
+                Room Allocation confirmed for <span class="font-semibold text-primary">Aura Unit 102</span> (Varkey &amp; Aleyamma).
+              </p>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">2 hours ago</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Capacity & Room Availability Quick Glance Notice -->
+<div class="p-5 rounded-2xl bg-surface-container flex flex-col gap-3 relative overflow-hidden">
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined text-xl">bedroom_parent</span>
+<span class="font-label-md text-label-md font-semibold">Inventory Snapshot</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Harmony Suite Level 1 has only <strong class="text-primary font-semibold">1 unit vacant</strong> with 3 high-priority dual-care inquiries in queue.
+        </p>
+<div class="flex items-center justify-between pt-2">
+<a class="font-label-sm text-label-sm text-secondary font-semibold hover:underline flex items-center gap-1" href="/living-spaces/">
+            Open Room Allocation CMS
+            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>
