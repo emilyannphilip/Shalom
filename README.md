@@ -20,3 +20,5 @@ The original standalone HTML designs are preserved as individual routes:
 - A-05: /admin/media-notices/
 
 Styles and scripts are embedded in their original HTML. Fonts, icons, Tailwind CSS, and image assets are loaded from the external URLs in the original designs.
+
+See [STYLE-GUIDE.md](./STYLE-GUIDE.md) for the light color tokens and [DESIGN-NOTES.md](./DESIGN-NOTES.md) for the refreshed homepage component specifications and prototype flow.
