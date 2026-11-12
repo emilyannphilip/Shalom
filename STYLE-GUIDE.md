@@ -16,7 +16,7 @@ A calm, welcoming botanical palette pairs warm ivory and soft beige surfaces wit
 | `surface-container` | `#EFE8DC` | Secondary cards and controls |
 | `surface-container-high` | `#E7DFD2` | Hover and raised states |
 | `surface-container-highest` | `#DDD3C4` | Dividers and stronger surface depth |
-| `primary` | `#405B48` | Soft sage brand actions and emphasis |
+| `primary` | `#526F56` | Soft sage brand actions and emphasis |
 | `on-primary` | `#FFFFFF` | Foreground on solid sage actions |
 | `primary-container` | `#E2ECE2` | Pale sage panels and selected states |
 | `on-primary-container` | `#263B2C` | Text on pale sage |
@@ -25,7 +25,7 @@ A calm, welcoming botanical palette pairs warm ivory and soft beige surfaces wit
 | `on-secondary-container` | `#3C452D` | Text on olive highlights |
 | `tertiary` | `#76565F` | Restrained dusty pink accents |
 | `tertiary-container` | `#F1E0E2` | Dusty pink soft highlights |
-| `on-surface` / `on-background` | `#252C26` | Main copy and headings |
+| `on-surface` / `on-background` | `#24392B` | Forest-green main copy and headings |
 | `on-surface-variant` | `#50584E` | Supporting copy and metadata |
 | `outline` / `outline-variant` | `#727968` / `#CCC6B9` | Focus, borders, and separators |
 
